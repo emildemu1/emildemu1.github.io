@@ -4,12 +4,39 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Begroeting voor Thijs</title>
+
+    <style>
+        body {
+            animation: changeColor 5s infinite alternate; /* Achtergrondkleur verandert elke 5 seconden */
+        }
+
+        @keyframes changeColor {
+            0% {
+                background-color: #ffcccb; /* Startkleur */
+            }
+            100% {
+                background-color: #aaffaa; /* Eindkleur */
+            }
+        }
+
+        h1 {
+            animation: rotateText 3s infinite linear; /* Tekst draait elke 3 seconden */
+        }
+
+        @keyframes rotateText {
+            0% {
+                transform: rotate(0deg); /* Startrotatie */
+            }
+            100% {
+                transform: rotate(360deg); /* Eindrotatie */
+            }
+        }
+    </style>
 </head>
 <body>
 
     <h1>Hallo Thijs!</h1>
-    <p>Welkom op deze eenvoudige HTML-pagina. We begroeten je hartelijk!</p>
+    <p>Welkom op deze kleurveranderende en draaiende HTML-pagina. We begroeten je hartelijk!</p>
 
 </body>
 </html>
-
