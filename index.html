@@ -1,3 +1,4 @@
+<!-- Pagina 1 - Begroeting voor Thijs -->
 <!DOCTYPE html>
 <html lang="nl">
 <head>
@@ -7,28 +8,34 @@
 
     <style>
         body {
-            animation: changeColor 5s infinite alternate; /* Achtergrondkleur verandert elke 5 seconden */
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            height: 100vh;
+            margin: 0;
+            animation: changeColor 5s infinite alternate;
         }
 
         @keyframes changeColor {
             0% {
-                background-color: #ffcccb; /* Startkleur */
+                background-color: #ffcccb;
             }
             100% {
-                background-color: #aaffaa; /* Eindkleur */
+                background-color: #aaffaa;
             }
         }
 
         h1 {
-            animation: rotateText 3s infinite linear; /* Tekst draait elke 3 seconden */
+            animation: rotateText 3s infinite linear;
+            transform-origin: center;
         }
 
         @keyframes rotateText {
             0% {
-                transform: rotate(0deg); /* Startrotatie */
+                transform: rotate(0deg);
             }
             100% {
-                transform: rotate(360deg); /* Eindrotatie */
+                transform: rotate(360deg);
             }
         }
     </style>
@@ -37,6 +44,47 @@
 
     <h1>Hallo Thijs!</h1>
     <p>Welkom op deze kleurveranderende en draaiende HTML-pagina. We begroeten je hartelijk!</p>
+
+    <nav>
+        <a href="pagina2.html">Ga naar pagina 2</a>
+    </nav>
+
+</body>
+</html>
+<!-- Pagina 2 - Kleine tekst beschikbaar via een balk bovenaan -->
+<!DOCTYPE html>
+<html lang="nl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tweede Pagina</title>
+
+    <style>
+        body {
+            margin: 0;
+        }
+
+        header {
+            background-color: #6495ED;
+            padding: 10px;
+            text-align: center;
+        }
+
+        p {
+            margin: 20px;
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <h1>Welkom op Pagina 2!</h1>
+        <nav>
+            <a href="index.html">Terug naar Pagina 1</a>
+        </nav>
+    </header>
+
+    <p>Dit is een kleine tekst beschikbaar via een balk bovenaan.</p>
 
 </body>
 </html>
